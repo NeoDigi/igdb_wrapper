@@ -10,7 +10,7 @@ set -e
 # Get the Dart SDK (only for travis-ci.org; otherwise, assume that Dart is already available).
 if [ "$TRAVIS" = "true" ]; then
   DART_DIST=dartsdk-linux-x64-release.zip
-  curl http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/$DART_DIST > $DART_DIST
+  curl https://storage.googleapis.com/dart-archive/channels/dev/release/2.0.0-dev.65.0/sdk/$DART_DIST > $DART_DIST
   unzip $DART_DIST > /dev/null
   rm $DART_DIST
   export DART_SDK="$PWD/dart-sdk"
