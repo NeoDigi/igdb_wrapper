@@ -133,7 +133,7 @@ wrapper.games(params).then((result) => print("Response body: ${loaded.body}"));
 params = new Parameters()
 	.addSearch("rockstar")
 	.addFields("name,logo")
-	.addFilter(""[name][in]=rockstar")
+	.addFilter("[name][in]=rockstar")
 	.addLimit("5")
 	.addOffset("0")
 	.addOrder("name:desc");
