@@ -1,0 +1,38 @@
+library igdb_wrapper.enums;
+
+enum Version {
+  STANDARD,
+  PRO,
+}
+
+enum Endpoint {
+  CHARACTERS,
+  COLLECTIONS,
+  COMPANIES,
+  CREDITS,
+  FEEDS,
+  FRANCHISES,
+  GAME_ENGINES,
+  GAME_MODES,
+  GAMES,
+  GENRES,
+  KEYWORDS,
+  PAGES,
+  PEOPLE,
+  PLATFORMS,
+  PLAYER_PERSPECTIVES,
+  PULSE_GROUPS,
+  PULSE_SOURCES,
+  PULSES,
+  RELEASE_DATES,
+  REVIEWS,
+  THEMES,
+  TITLES,
+}
+
+enum HttpMethod {
+  GET,
+  POST,
+  PATCH,
+  DELETE,
+}
