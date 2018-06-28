@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/NeoDigi/igdb_wrapper.svg?branch=master)](https://travis-ci.org/NeoDigi/igdb_wrapper)
+
 # api-dart
 A Dart wrapper for the IGDB.com Free Video Game Database API.
 
