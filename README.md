@@ -103,12 +103,12 @@ Search for up to five Zelda games with release dates between 1 Jan and 31 Dec 20
 
 params = new Parameters()
 	.addSearch("Zelda")
-	.addFields(“name,release_dates.date,rating,hypes,cover”)
-	.addFilter("[release_dates.date][gt]=2010-12-31”)
-	.addFilter(“[release_dates.date][lt]=2012-01-01”)
+	.addFields("name,release_dates.date,rating,hypes,cover")
+	.addFilter("[release_dates.date][gt]=2010-12-31")
+	.addFilter("[release_dates.date][lt]=2012-01-01")
 	.addLimit("2")
 	.addOffset("0")
-	.addOrder(“release_dates.date:desc”);
+	.addOrder("release_dates.date:desc");
 
 wrapper.search(Endpoint.PLATFORMS, params).then((result) => print("Response body: ${loaded.body}"));
 
@@ -120,8 +120,8 @@ wrapper.search(Endpoint.PLATFORMS, params).then((result) => print("Response body
 
 
 params = new Parameters()
-	.addIds(“18472,18228”)
-	.addFields(“name,cover”);
+	.addIds("18472,18228")
+	.addFields("name,cover");
 
 wrapper.games(params).then((result) => print("Response body: ${loaded.body}"));
 
@@ -132,11 +132,11 @@ wrapper.games(params).then((result) => print("Response body: ${loaded.body}"));
 
 params = new Parameters()
 	.addSearch("rockstar")
-	.addFields(“name,logo”)
-	.addFilter(“[name][in]=rockstar”)
+	.addFields("name,logo")
+	.addFilter(""[name][in]=rockstar")
 	.addLimit("5")
 	.addOffset("0")
-	.addOrder(“name:desc”);
+	.addOrder("name:desc");
 
 wrapper.search(Endpoint.COMPANIES, params).then((result) => print("Response body: ${loaded.body}"));
 
