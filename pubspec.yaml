@@ -1,6 +1,6 @@
 name: igdb_wrapper
 description: Dart API Wrapper
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/NeoDigi/igdb_wrapper
 author: Julien Tielemans <julien.tiel@gmail.com>
 
